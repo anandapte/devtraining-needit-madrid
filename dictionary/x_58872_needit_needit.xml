@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="New field 1" max_length="40" name="new_field_1" type="integer"/>
+        <element label="New field 2" max_length="60" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Needed by" mandatory="true" max_length="40" name="u_needed_by" type="glide_date_time"/>
+        <element label="New field 3" max_length="40" name="u_new_field_3" type="integer"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="HR"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Information Technology" sequence="3" value="IT"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HR1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="HR2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="LG1" sequence="2" value="lg1"/>
+                <element inactive_on_update="false" label="LG2" sequence="3" value="lg2"/>
+                <element inactive_on_update="false" label="IT1" sequence="4" value="it1"/>
+                <element inactive_on_update="false" label="IT2" sequence="5" value="it2"/>
+                <element inactive_on_update="false" label="FC1" sequence="6" value="fc1"/>
+                <element inactive_on_update="false" label="FC2" sequence="7" value="fc2"/>
+            </choice>
+        </element>
+    </element>
+</database>
