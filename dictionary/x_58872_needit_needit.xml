@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="5" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="integer"/>
         <element label="New field 2" max_length="60" name="new_field_2" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Needed by" mandatory="true" max_length="40" name="u_needed_by" type="glide_date_time"/>
